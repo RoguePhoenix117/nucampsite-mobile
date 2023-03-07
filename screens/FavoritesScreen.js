@@ -21,11 +21,11 @@ const FavoritesScreen = ({ navigation }) => {
                     <TouchableOpacity
                         style={styles.deleteTouchable}
                         onPress={() => Alert.alert('Delete Favorite?',
-                            'Are you sure you wish to delete the favorite campsite' + campsite.name + '?',
+                            'Are you sure you wish to delete the favorite campsite ' + campsite.name + '?',
                             [
                                 {
                                     text: 'Cancel',
-                                    onPress: () => console.log(campsite.naem + 'Not Deleted'),
+                                    onPress: () => console.log(campsite.name + 'Not Deleted'),
                                     style: 'cancel'
                                 },
                                 {
